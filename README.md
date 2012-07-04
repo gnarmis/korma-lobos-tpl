@@ -22,4 +22,6 @@ Once in the REPL:
 
 ## License
 
-Do whatever the fuck you want.
+No Copyright.
+
+Distributed under the Eclipse Public License, the same as Clojure.
