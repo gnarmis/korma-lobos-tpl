@@ -1,4 +1,4 @@
-(defproject korma-lobos-tpl "0.1.0-SNAPSHOT"
+(defproject korma-lobos-tpl "0.0.1-SNAPSHOT"
             :description "A template integrating Korma and Lobos"
             :dependencies [[org.clojure/clojure "1.3.0"]
                            [noir "1.2.1"]

@@ -1,17 +1,25 @@
 # korma-lobos-tpl
 
-A website written in noir. 
+A template integrating Korma and Lobos.
 
 ## Usage
 
+Create a MySQL db and provide details in src/korma_lobos_tpl/secret.clj in the form of dynamic bindings of all the required names used in lobos.config and korma-lobos-tpl.entities.connection.
+
 ```bash
 lein deps
-lein run
+lein repl
+```
+
+Once in the REPL:
+```clojure
+(use 'lobos.core 'lobos.connectivity 'lobos.migration 'lobos.config 'lobos.migrations)
+(open-global sqldb)
+(migrate)
+(use 'korma-lobos-tpl.entities.users)
+(create-new-user "Aberforth")
 ```
 
 ## License
 
-Copyright (C) 2011 FIXME
-
-Distributed under the Eclipse Public License, the same as Clojure.
-
+Do whatever the fuck you want.
